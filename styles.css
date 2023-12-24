@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-color: #0d1a2d;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main-img {
+  border-radius: 1em;
+}
+
+.view-icon {
+  display: none;
+}
+
+.avatar {
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+hr {
+  border-color: #2f4159;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.description,
+.right p,
+.card-bottom p {
+  color: #8bacd7;
+}
+
+.ethereum-text {
+  color: #00fdfb;
+}
+
+.name {
+  color: white;
+}
+
+.card {
+  background-color: #15273f;
+  max-width: 50%;
+  margin-inline: auto;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    max-width: 80%;
+  }
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left,
+.right,
+.card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
