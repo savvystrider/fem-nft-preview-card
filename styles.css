@@ -21,10 +21,16 @@ img {
 
 .main-img {
   border-radius: 1em;
+  z-index: -1;
 }
 
 .view-icon {
-  display: none;
+  opacity: 0.5;
+  transition: all 0.15s ease;
+}
+
+.view-icon:hover {
+  opacity: 1;
 }
 
 .avatar {
@@ -40,6 +46,15 @@ hr {
 h1 {
   color: white;
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+h1:hover,
+h1:focus,
+.name:hover,
+.name:focus {
+  color: #00fdfb;
 }
 
 .description,
@@ -54,13 +69,15 @@ h1 {
 
 .name {
   color: white;
+  transition: all 0.15s ease;
+  cursor: pointer;
 }
 
 .card {
   background-color: #15273f;
   max-width: 50%;
   margin-inline: auto;
-  padding: 1em;
+  padding: 1em 1.5em;
   border-radius: 1em;
 }
 
@@ -82,4 +99,32 @@ h1 {
   display: flex;
   align-items: center;
   gap: 0.5em;
+}
+
+.img-container {
+  cursor: pointer;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+  display: grid;
+  place-content: center;
+  border-radius: 1em;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay:hover + .view-icon {
+  opacity: 1;
 }
