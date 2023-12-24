@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-<!-- - Live Site URL: [[https://fem-notifications.netlify.app/](https://fem-notifications.netlify.app/](https://frontend-mentor-blog-card.netlify.app/)) -->
+- Live Site URL: [[https://fem-notifications.netlify.app/](https://fem-notifications.netlify.app/](https://frontend-mentor-nftcard.netlify.app/)
 
 ### Built with
 
